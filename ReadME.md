@@ -14,8 +14,8 @@
 - 🤖 AI that use CCTV camera to manage traffic.
 
 # 🥴⛓️ Related Reposatory
+- Comming soon....
 
-- 📑 [ View Assignment ](https://github.com/SmakJit/Assignment-And-Document)
 
 # 🖊️ Supervisor
 - Sek Socheat
