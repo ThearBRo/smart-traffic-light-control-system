@@ -1,0 +1,18 @@
+body { 
+    background: #f0f2f5;
+    padding: 20px;
+}
+
+.stat-card { 
+    background: white; 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    height: 100%;
+}
+
+.btn-road { 
+    width: 100%; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}

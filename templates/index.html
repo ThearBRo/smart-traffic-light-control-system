@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Traffic Dashboard</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <script src="https://jsdelivr.net"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style src="{{ url_for('static', filename='css/style.css')}}"></style>
+</head>
+<body>
+<div class="controls">
+    <h3>ðŸŽ› Control Roads</h3>
+
+    <button onclick="controlRoad('A')">Open Road A</button>
+    <button onclick="controlRoad('B')">Open Road B</button>
+    <button onclick="controlRoad('C')">Open Road C</button>
+    <button onclick="controlRoad('D')">Open Road D</button>
+
+    <button onclick="autoDouble()">Auto double road way</button>
+    <button onclick="autoTraffic()">Auto Traffic</button>
+
+    <div class="timer-card">
+        <h3 class="text-center mb-4">â±ï¸ Set Road Timer</h3>
+        
+        <form id="timerForm">
+            <div class="mb-3">
+                <label class="form-label">Select Road:</label>
+                <select class="form-select" id="roadSelect" required>
+                    <option value="A">Road A</option>
+                    <option value="B">Road B</option>
+                    <option value="C">Road C</option>
+                    <option value="D">Road D</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Duration (Milliseconds):</label>
+                <input type="number" class="form-control" id="msInput" value="5" min="5" max="200" required>
+                <div class="form-text"> Example : 5 seconds ( Green will ligt 5 s)</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Update Timer</button>
+        </form>
+
+        <div id="statusMessage" class="status-msg text-center"></div>
+    </div>
+
+    <div class="col-md-7">
+        <div class="stat-card">
+            <h3>ðŸ“Š Traffic Statistics</h3>
+            
+            <div class="actions">
+                <a href="{{ url_for('export_traffic') }}">
+                    <i class="fa fa-download"></i> download report (.csv)
+                </a>
+            </div>
+
+            <p class="text-muted small"></p>
+            <canvas id="trafficChart"></canvas>
+        </div>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>   
+
+</body>
+</html>
