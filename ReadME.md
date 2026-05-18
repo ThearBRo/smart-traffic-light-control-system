@@ -32,6 +32,10 @@
 - Ang Vannchannida (Project Lead)
 - Lor Puthichenda (Research and Business Analysis)
 - Teng Soksereyvathna (Product Manager)
+- Nget Chansakada (Backend Developer)
+- Run Panhaseth (Frontend Developer)
+- Pech Channorin (Frontend Developer)
+- Rith Mony (Digital Marketing)
 
 # 🚦 DataSchema
 
